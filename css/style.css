@@ -108,29 +108,29 @@ section{
     transform: scale(1.2) translatey(10px);
     transition: .4s;
 }
-.About{
+.about{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 1.5rem;
     align-items: center;
 }
 
-.About-img img{
+.about-img img{
     max-width: 100%;
     width: 480px;
     height: auto;
 }
 
-.About-text span{
+.about-text span{
     color: var(--main-color);
     font-weight: 600;
 }
 
-.About-text h2{
+.about-text h2{
     font-size: var(--h2-font);
 }
 
-.About-text P{
+.about-text P{
     margin: 0.8rem 0 1.8rem;
     line-height: 1.7;
 }
@@ -279,30 +279,35 @@ section{
     font-size: 1.5rem;
     border-radius: 50%;
     transition: .4s;
+    padding: 10px;
 }
 .col .social a:hover{
     transform: scale(1.2);
-    color: var(--big-font);
+    color: var(--bg-color);
     background: var(--text-color);
 } 
-@media (max-width: 1560px){
-    header{
+@media (max-width: 1560px) {
+    header {
         padding: 15px 40px;
     }
-    :root{
-        --big-font:3.5rem;
-        --h2-font:2rem;
+
+    :root {
+        --big-font: 3.5rem;
+        --h2-font: 2rem;
     }
 }
-@media (max-width: 1140px){
-    section{
+
+@media (max-width: 1140px) {
+    section {
         padding: 50px 8%;
     }
-    #menu-icon{
-        display: initial;
+
+    #menu-icon {
+        display: block;
         color: var(--text-color);
     }
-    header .navbar{
+
+    header .navbar {
         position: absolute;
         top: -400px;
         left: 0;
@@ -311,41 +316,50 @@ section{
         flex-direction: column;
         text-align: center;
         background: #2b2640;
-        transition: .3s;   
+        transition: .3s;
     }
-    header .navbar.active{
+
+    header .navbar.active {
         top: 70px;
     }
-    .navbar a{
+
+    .navbar a {
         padding: 1.5rem;
         display: block;
     }
-    .col{
+
+    .col {
         width: 50%;
         margin-bottom: 10px;
     }
 }
-@media (max-width: 720px){
-    header{
+
+@media (max-width: 720px) {
+    header {
         padding: 10px 16px;
     }
-    .home{
+
+    .home {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about{
+
+    .about {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .About-img{
+
+    .about-img {
         order: 2;
     }
-    section{
+
+    section {
         padding: 100px 7%;
     }
 }
-@media (max-width: 575px){
-    .col{
+
+@media (max-width: 575px) {
+    .col {
         width: 100%;
     }
 }
