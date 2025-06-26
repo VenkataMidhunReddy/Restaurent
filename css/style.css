@@ -263,7 +263,7 @@ section{
     transform: translateX(-12px);
 }
 .col .social{
-    width: 220px;
+    /*width: px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -280,6 +280,7 @@ section{
     border-radius: 50%;
     transition: .4s;
     padding: 10px;
+    row-gap: 120px;
 }
 .col .social a:hover{
     transform: scale(1.2);
